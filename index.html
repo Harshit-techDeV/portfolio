@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Portfolio | Choose Your Player</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+    <div class="character-card">
+        <!-- Header -->
+        <div class="header">
+            <div>
+                <h1 id="char-name">Harshit</h1>
+                <p class="class-title" id="char-title">Class: Full-Stack Alchemist</p>
+            </div>
+            <div class="level-badge">LVL 21</div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="grid-container">
+            <!-- Left Column: Avatar & Quick Info -->
+            <div class="avatar-section">
+                <div class="avatar-frame">
+                    <!-- Replace with your image link -->
+                    <img src="anime.jpeg" alt="Character Portrait" id="char-img">
+                </div>
+                <p class="bio">
+                    A developer exploring digital realms, crafting code artifacts, and solving algorithmic puzzles.
+                </p>
+            </div>
+
+            <!-- Right Column: Stats, Inventory & Quests -->
+            <div>
+                <!-- Attributes / Stats -->
+                <div class="stats-container">
+                    <h2 class="section-title">Attributes</h2>
+                    
+                    <div class="stat-row">
+                        <div class="stat-label"><span>Frontend Mastery</span><span>85%</span></div>
+                        <div class="stat-bar-bg"><div class="stat-bar-fill" style="width: 85%;"></div></div>
+                    </div>
+                    
+                    <div class="stat-row">
+                        <div class="stat-label"><span>Backend Logic</span><span>75%</span></div>
+                        <div class="stat-bar-bg"><div class="stat-bar-fill" style="width: 75%;"></div></div>
+                    </div>
+
+                    <div class="stat-row">
+                        <div class="stat-label"><span>UI/UX Crafting</span><span>80%</span></div>
+                        <div class="stat-bar-bg"><div class="stat-bar-fill" style="width: 80%;"></div></div>
+                    </div>
+                </div>
+
+                <!-- Inventory / Skills -->
+                <div>
+                    <h2 class="section-title">Inventory (Skills)</h2>
+                    <div class="inventory-grid">
+                        <span class="inventory-item">JavaScript</span>
+                        <span class="inventory-item">React</span>
+                        <span class="inventory-item">Node.js</span>
+                        <span class="inventory-item">Python</span>
+                        <span class="inventory-item">CSS / Tailwind</span>
+                        <span class="inventory-item">Git / GitHub</span>
+                    </div>
+                </div>
+
+                <!-- Completed Quests / Projects -->
+                <div>
+                    <h2 class="section-title">Completed Quests (Projects)</h2>
+                    
+                <div id="quest-container">
+                    <div class="quest-card">
+                        <div class="quest-header">
+                            <span class="quest-title">Quest 1: The AI Web App</span>
+                            <span class="quest-status">COMPLETED</span>
+                        </div>
+                        <p class="quest-desc">Built a web application powered by AI APIs to assist users in real time.</p>
+                        <a href="#" class="quest-link" >View Quest Artifact →</a>
+                    </div>
+
+                    <div class="quest-card">
+                        <div class="quest-header">
+                            <span class="quest-title">Quest 2: Interactive Portfolio</span>
+                            <span class="quest-status">COMPLETED</span>
+                        </div>
+                        <p class="quest-desc">Designed an immersive, game-themed character selection dashboard.</p>
+                        <a href="#" class="quest-link" >View Quest Artifact →</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Actions -->
+        <div class="actions">
+            <a href="mailto:your-email@example.com" class="btn btn-secondary">Send Message</a>
+            <a href="#" class="btn btn-primary">Hire Character</a>
+        </div>
+        <!-- Quest Details Modal -->
+<div id="quest-modal" class="modal">
+    <div class="modal-content">
+        <span id="close-modal">&times;</span>
+        <h2 id="modal-title">Quest Details</h2>
+        <p id="modal-status" class="quest-status">COMPLETED</p>
+        <p id="modal-desc" style="margin: 15px 0; color: #94a3b8;"></p>
+        
+        <div id="modal-details" style="margin-bottom: 20px;">
+            <h4 style="color: #00f0ff; margin-bottom: 8px;">Key Features / Tech Used:</h4>
+            <ul id="modal-features" style="padding-left: 20px; color: #e2e8f0;"></ul>
+        </div>
+
+        <a id="modal-link" href="#" target="_blank" class="btn btn-primary">Launch Quest Artifact ↗</a>
+    </div>
+</div>
+    </div>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
